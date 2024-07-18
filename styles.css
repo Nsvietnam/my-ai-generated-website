@@ -43,6 +43,17 @@ section {
     margin-bottom: 2rem;
 }
 
+.gallery {
+    display: flex;
+    gap: 10px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 150px;
+    border-radius: 8px;
+}
+
 footer {
     background-color: #333;
     color: white;
@@ -51,6 +62,12 @@ footer {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+.social-media a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
 }
 
 form label {
@@ -77,4 +94,15 @@ form button {
 
 form button:hover {
     background-color: #45a049;
+}
+
+@media (max-width: 600px) {
+    nav li {
+        float: none;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
 }
